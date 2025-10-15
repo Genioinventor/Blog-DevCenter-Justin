@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 32 32">
+  <!-- Fondo azul con bordes redondeados -->
+  <rect width="32" height="32" fill="#3b82f6" rx="6"/>
+
+  <!-- Letra J blanca centrada -->
+  <text x="50%" y="50%"
+        text-anchor="middle"
+        dominant-baseline="central"
+        font-family="Inter, Arial, sans-serif"
+        font-size="16"
+        font-weight="700"
+        fill="#ffffff">
+    J
+  </text>
+</svg>
