@@ -89,8 +89,38 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Update year in footer
-document.getElementById('year').textContent = new Date().getFullYear();
+// Año dinámico en el footer
+const yearSpan = document.getElementById('year');
+if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+}
+
+// Buscador de proyectos
+const projectSearch = document.getElementById('projectSearch');
+const projectsGrid = document.getElementById('projectsGrid');
+
+if (projectSearch && projectsGrid) {
+    projectSearch.addEventListener('input', (e) => {
+        const searchTerm = e.target.value.toLowerCase();
+        const projects = projectsGrid.getElementsByClassName('project-card');
+
+        Array.from(projects).forEach(project => {
+            const title = project.querySelector('.project-title').textContent.toLowerCase();
+            const description = project.querySelector('.project-description').textContent.toLowerCase();
+            const tags = Array.from(project.querySelectorAll('.project-tag'))
+                .map(tag => tag.textContent.toLowerCase())
+                .join(' ');
+
+            if (title.includes(searchTerm) || description.includes(searchTerm) || tags.includes(searchTerm)) {
+                project.style.display = 'block';
+                project.style.opacity = '1';
+                project.style.transform = 'translateY(0)';
+            } else {
+                project.style.display = 'none';
+            }
+        });
+    });
+}
 
 // Intersection Observer for animations
 const observerOptions = {

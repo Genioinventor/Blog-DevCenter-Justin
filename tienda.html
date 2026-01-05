@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda - Justin</title>
+    <meta name="description" content="Tienda oficial de DevCenter. Servidores de Discord, páginas web y más.">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <a href="index.html" class="nav-brand">
+                    <svg class="nav-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                    <span class="nav-title">Justin</span>
+                </a>
+
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                    <a href="tienda.html" class="nav-link active">Tienda</a>
+                    <a href="about.html" class="nav-link">Sobre Mí</a>
+                    <a href="proyectos.html" class="nav-link">Proyectos</a>
+                    <a href="https://devcenter-review.netlify.app" class="nav-link" target="_blank" rel="noopener noreferrer">Calificar DevCenter</a>
+                    <a href="index.html#contact" class="nav-link">Contacto</a>
+                </div>
+
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <svg class="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html" class="mobile-link">Inicio</a>
+            <a href="tienda.html" class="mobile-link active">Tienda</a>
+            <a href="about.html" class="mobile-link">Sobre Mí</a>
+            <a href="proyectos.html" class="mobile-link">Proyectos</a>
+            <a href="https://devcenter-review.netlify.app" class="mobile-link" target="_blank" rel="noopener noreferrer">Calificar DevCenter</a>
+            <a href="index.html#contact" class="mobile-link">Contacto</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero-shop">
+            <div class="container">
+                <div class="section-header">
+                    <h1 class="section-title">Nuestra <span class="gradient-text">Tienda</span></h1>
+                    <p class="section-description">Explora nuestros servicios exclusivos diseñados para potenciar tu presencia digital.</p>
+                </div>
+
+                <div class="shop-grid">
+                    <!-- Servidor Discord Pro -->
+                    <div class="project-card">
+                        <div class="project-image" style="background: linear-gradient(135deg, #5865F2, #4752C4);">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z"/>
+                            </svg>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Servidor Discord Pro</h3>
+                            <p class="project-description">Configuración avanzada: sistemas de niveles, economía, moderación automática y estética personalizada.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Discord</span>
+                                <span class="project-tag">Gestión</span>
+                            </div>
+                            <br>
+                            <a href="discord-pay.html" class="btn btn-primary" style="width: 100%; justify-content: center;">Personalizar</a>
+                        </div>
+                    </div>
+
+                    <!-- Bot de Discord -->
+                    <div class="project-card">
+                        <div class="project-image" style="background: linear-gradient(135deg, #FF73FA, #FF4ED8);">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/>
+                                <circle cx="12" cy="12" r="3"/>
+                            </svg>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Bot Personalizado</h3>
+                            <p class="project-description">Creamos un bot exclusivo para tu servidor con funciones únicas adaptadas a tus necesidades.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Bot</span>
+                                <span class="project-tag">JS</span>
+                            </div>
+                            <br>
+                            <a href="index.html#contact" class="btn btn-primary" style="width: 100%; justify-content: center;">Consultar</a>
+                        </div>
+                    </div>
+
+                    <!-- Landing Page -->
+                    <div class="project-card">
+                        <div class="project-image" style="background: linear-gradient(135deg, #a855f7, #ec4899);">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Landing Page Elite</h3>
+                            <p class="project-description">Diseño premium optimizado para SEO, ultra rápido y adaptado a todos los dispositivos móviles.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Web</span>
+                                <span class="project-tag">Elite</span>
+                            </div>
+                            <br>
+                            <a href="index.html#contact" class="btn btn-primary" style="width: 100%; justify-content: center;">Cotizar</a>
+                        </div>
+                    </div>
+
+                    <!-- Plan Personalizado -->
+                    <div class="project-card">
+                        <div class="project-image" style="background: linear-gradient(135deg, #06b6d4, #22c55e);">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                            </svg>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Soporte Técnico VIP</h3>
+                            <p class="project-description">Asistencia técnica prioritaria y mantenimiento para tus proyectos web o servidores.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Soporte</span>
+                                <span class="project-tag">VIP</span>
+                            </div>
+                            <br>
+                            <a href="index.html#contact" class="btn btn-primary" style="width: 100%; justify-content: center;">Suscribirse</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-brand">
+                        <svg class="footer-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                        <span class="footer-title">Justin</span>
+                    </div>
+                    <p class="footer-description">
+                        Programador web apasionado por la tecnología, innovación e inteligencia artificial.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">© <span id="year"></span> DevCenter - Justin</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
