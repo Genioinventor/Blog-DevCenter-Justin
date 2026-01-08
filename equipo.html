@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipo - Justin</title>
+    <meta name="description" content="Conoce al equipo detrás de DevCenter.">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <a href="/" class="nav-brand">
+                    <svg class="nav-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                    <span class="nav-title">Justin</span>
+                </a>
+
+                <div class="nav-links">
+                    <a href="/" class="nav-link">Inicio</a>
+                    <a href="/tienda" class="nav-link">Tienda</a>
+                    <a href="/about" class="nav-link">Sobre Mí</a>
+                    <a href="/proyectos" class="nav-link">Proyectos</a>
+                    <a href="/equipo" class="nav-link active">Equipo</a>
+                    <a href="/#contact" class="nav-link">Contacto</a>
+                </div>
+
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <svg class="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="/" class="mobile-link">Inicio</a>
+            <a href="/tienda" class="mobile-link">Tienda</a>
+            <a href="/about" class="mobile-link">Sobre Mí</a>
+            <a href="/proyectos" class="mobile-link">Proyectos</a>
+            <a href="/equipo" class="mobile-link active">Equipo</a>
+            <a href="/#contact" class="mobile-link">Contacto</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="founders-page">
+            <div class="container">
+                <div class="section-header">
+                    <h1 class="section-title">Nuestro <span class="gradient-text">Equipo</span></h1>
+                    <p class="section-description">El equipo detrás de DevCenter y su visión para el futuro del desarrollo.</p>
+                </div>
+
+                <div class="founders-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                    <div class="project-card">
+                        <div class="project-image" style="background: linear-gradient(135deg, #6366f1, #a855f7); height: 300px;">
+                            <img src="DevCenter-Img/DevCenter.jpg" alt="Justin" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px 12px 0 0;">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Justin</h3>
+                            <p class="project-description">Fundador y Desarrollador Principal de DevCenter. Apasionado por la tecnología y la creación de herramientas innovadoras.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Founder</span>
+                                <span class="project-tag">Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p class="copyright">© <span id="year"></span> DevCenter - Justin</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

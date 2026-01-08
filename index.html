@@ -13,19 +13,16 @@
         <div class="nav-container">
             <div class="nav-content">
                 <a href="#" class="nav-brand">
-                    <svg class="nav-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polyline points="16 18 22 12 16 6"></polyline>
-                        <polyline points="8 6 2 12 8 18"></polyline>
-                    </svg>
-                    <span class="nav-title">Justin</span>
+                    <img src="DevCenter-Img/DevCenterOF.png" alt="DevCenter Logo" class="nav-logo" style="height: 32px; width: auto;">
+                    <span class="nav-title">DevCenter</span>
                 </a>
 
                 <div class="nav-links">
-                    <a href="index.html" class="nav-link active">Inicio</a>
-                    <a href="tienda.html" class="nav-link">Tienda</a>
-                    <a href="about.html" class="nav-link">Sobre Mí</a>
-                    <a href="proyectos.html" class="nav-link">Proyectos</a>
-                    <a href="https://devcenter-review.netlify.app" class="nav-link" target="_blank" rel="noopener noreferrer">Calificar DevCenter</a>
+                    <a href="/" class="nav-link active">Inicio</a>
+                    <a href="/tienda" class="nav-link">Tienda</a>
+                    <a href="/about" class="nav-link">Sobre Mí</a>
+                    <a href="/proyectos" class="nav-link">Proyectos</a>
+                    <a href="/equipo" class="nav-link">Equipo</a>
                     <a href="#contact" class="nav-link">Contacto</a>
                 </div>
 
@@ -58,48 +55,42 @@
         </div>
 
         <div class="mobile-menu" id="mobileMenu">
-            <a href="index.html" class="mobile-link active">Inicio</a>
-            <a href="tienda.html" class="mobile-link">Tienda</a>
-            <a href="about.html" class="mobile-link">Sobre Mí</a>
-            <a href="proyectos.html" class="mobile-link">Proyectos</a>
-            <a href="https://devcenter-review.netlify.app" class="mobile-link" target="_blank" rel="noopener noreferrer">Calificar DevCenter</a>
+            <a href="/" class="mobile-link active">Inicio</a>
+            <a href="/tienda" class="mobile-link">Tienda</a>
+            <a href="/about" class="mobile-link">Sobre Mí</a>
+            <a href="/proyectos" class="mobile-link">Proyectos</a>
+            <a href="/equipo" class="mobile-link">Equipo</a>
             <a href="#contact" class="mobile-link">Contacto</a>
         </div>
     </nav>
 
     <main>
-        <section class="hero">
+        <section class="hero glass" style="border-bottom: 1px solid hsla(var(--border) / 0.5);">
             <div class="hero-bg"></div>
             <div class="container">
                 <div class="hero-grid">
                     <div class="hero-content">
                         <div class="hero-text">
-                            <span class="badge">
+                            <h1 class="hero-title main-title">
+                                <span class="gradient-text">Innovación Digital</span>
+                                <span class="author-tag">por Justin</span>
+                            </h1>
+                            <p class="hero-description anim-from-left">
+                                Impulso el futuro digital a través de soluciones web de alto nivel, 
+                                especializándome en arquitecturas escalables y experiencias de usuario de vanguardia.
+                            </p>
+                            <span class="badge" id="typewriter-badge">
                                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
                                 </svg>
-                                Programador Web
+                                <span class="typewriter-text"></span>
                             </span>
-                            <h1 class="hero-title">
-                                Hola, soy <span class="gradient-text">Justin</span>
-                            </h1>
-                            <p class="hero-subtitle">Programador Web Apasionado</p>
-                            <p class="hero-description">
-                                Me apasiona la tecnología, la innovación y la inteligencia artificial. 
-                                Creo proyectos web que combinan diseño, funcionalidad y automatización inteligente.
-                            </p>
+                            <div class="subtitle-container">
+                                <p class="hero-subtitle epic-slide">Fundador y Desarrollador de DevCenter</p>
+                            </div>
                         </div>
 
-                        <div class="hero-buttons">
-                            <a href="proyectos.html" class="btn btn-primary">
-                                Ver Proyectos
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                    <polyline points="12 5 19 12 12 19"></polyline>
-                                </svg>
-                            </a>
-                            <a href="#contact" class="btn btn-outline">Contactar</a>
-                        </div>
+                        <!-- Botones eliminados -->
                     </div>
 
                     <div class="hero-skills">
@@ -159,8 +150,11 @@
 
         <section class="shop-compact" id="tienda">
             <div class="container">
+                <div class="section-header" style="margin-bottom: 2rem;">
+                    <h2 class="section-title">Tienda</h2>
+                </div>
                 <div class="shop-compact-grid">
-                    <a href="tienda.html" class="shop-compact-card discord">
+                    <a href="/tienda" class="shop-compact-card discord">
                         <div class="shop-compact-icon">
                             <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z"/>
@@ -178,7 +172,7 @@
                         </div>
                     </a>
 
-                    <a href="tienda.html" class="shop-compact-card web">
+                    <a href="/tienda" class="shop-compact-card web">
                         <div class="shop-compact-icon">
                             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
@@ -207,14 +201,14 @@
                     <h2 class="section-title">Accesos Rápidos</h2>
                 </div>
                 <div class="quick-links-grid">
-                    <a href="index.html" class="quick-link-item">
+                    <a href="/" class="quick-link-item">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
                             <polyline points="9 22 9 12 15 12 15 22"></polyline>
                         </svg>
                         <span>Inicio</span>
                     </a>
-                    <a href="tienda.html" class="quick-link-item">
+                    <a href="/tienda" class="quick-link-item">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <circle cx="9" cy="21" r="1"></circle>
                             <circle cx="20" cy="21" r="1"></circle>
@@ -222,14 +216,14 @@
                         </svg>
                         <span>Tienda</span>
                     </a>
-                    <a href="about.html" class="quick-link-item">
+                    <a href="/about" class="quick-link-item">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                             <circle cx="12" cy="7" r="4"></circle>
                         </svg>
                         <span>Sobre Mí</span>
                     </a>
-                    <a href="proyectos.html" class="quick-link-item">
+                    <a href="/proyectos" class="quick-link-item">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
                             <line x1="8" y1="21" x2="16" y2="21"></line>
@@ -237,11 +231,14 @@
                         </svg>
                         <span>Proyectos</span>
                     </a>
-                    <a href="https://devcenter-review.netlify.app" class="quick-link-item" target="_blank" rel="noopener noreferrer">
+                    <a href="/equipo" class="quick-link-item">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                         </svg>
-                        <span>Calificar</span>
+                        <span>Equipo</span>
                     </a>
                     <a href="#contact" class="quick-link-item">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -256,53 +253,61 @@
         <section class="contact" id="contact">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Contacto</h2>
-                    <p class="section-description">
-                        ¿Tienes un proyecto en mente? ¡Hablemos!
-                    </p>
+                    <h2 class="section-title">Contacto <span class="gradient-text">Premium</span></h2>
+                    <p class="section-description">¿Tienes un proyecto en mente? ¡Hablemos!</p>
                 </div>
                 
-                <div class="contact-grid">
-                    <a href="#" class="contact-card" id="whatsappContact">
-                        <div class="contact-icon whatsapp">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-                            </svg>
-                        </div>
-                        <h3 class="contact-title">WhatsApp</h3>
-                        <p class="contact-description">Envíame un mensaje directo</p>
-                    </a>
+                <div class="contact-interactive-container">
+                    <div class="contact-ray-container">
+                        <div class="ray-line ray-1"></div>
+                        <div class="ray-line ray-2"></div>
+                        <div class="ray-line ray-3"></div>
+                        <div class="ray-line ray-4"></div>
+                    </div>
+                    
+                    <div class="contact-central-logo">
+                        <div class="logo-pulse"></div>
+                        <img src="DevCenter-Img/DevCenterOF.png" alt="DevCenter Logo" class="contact-logo-img">
+                    </div>
 
-                    <a href="#" class="contact-card" id="emailContact">
-                        <div class="contact-icon email">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                <polyline points="22,6 12,13 2,6"></polyline>
-                            </svg>
-                        </div>
-                        <h3 class="contact-title">Email</h3>
-                        <p class="contact-description">Escríbeme un correo</p>
-                    </a>
+                    <div class="contact-methods-wrapper">
+                        <a href="#" class="contact-method-node whatsapp" id="whatsappContact">
+                            <div class="node-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                </svg>
+                            </div>
+                            <span>WhatsApp</span>
+                        </a>
+                        
+                        <a href="#" class="contact-method-node email" id="emailContact">
+                            <div class="node-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <span>Email</span>
+                        </a>
 
-                    <a href="#" class="contact-card" id="githubContact" target="_blank" rel="noopener noreferrer">
-                        <div class="contact-icon github">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                            </svg>
-                        </div>
-                        <h3 class="contact-title">GitHub</h3>
-                        <p class="contact-description">Revisa mis proyectos</p>
-                    </a>
+                        <a href="#" class="contact-method-node github" id="githubContact" target="_blank" rel="noopener noreferrer">
+                            <div class="node-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </div>
+                            <span>GitHub</span>
+                        </a>
 
-                    <a href="#" class="contact-card" id="discordContact" target="_blank" rel="noopener noreferrer">
-                        <div class="contact-icon discord">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z"/>
-                            </svg>
-                        </div>
-                        <h3 class="contact-title">Discord</h3>
-                        <p class="contact-description">Únete al servidor</p>
-                    </a>
+                        <a href="#" class="contact-method-node discord" id="discordContact" target="_blank" rel="noopener noreferrer">
+                            <div class="node-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z"/>
+                                </svg>
+                            </div>
+                            <span>Discord</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -313,14 +318,11 @@
             <div class="footer-grid">
                 <div class="footer-about">
                     <div class="footer-brand">
-                        <svg class="footer-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="16 18 22 12 16 6"></polyline>
-                            <polyline points="8 6 2 12 8 18"></polyline>
-                        </svg>
-                        <span class="footer-title">Justin</span>
+                        <img src="DevCenter-Img/DevCenterOF.png" alt="DevCenter Logo" class="footer-logo" style="height: 24px; width: auto; margin-right: 8px;">
+                        <span class="footer-title">DevCenter</span>
                     </div>
                     <p class="footer-description">
-                        Programador web apasionado por la tecnología, innovación e inteligencia artificial.
+                        Creado por Justin. Impulsando el desarrollo web con innovación e inteligencia artificial.
                     </p>
                 </div>
 

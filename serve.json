@@ -1,0 +1,11 @@
+{
+  "public": ".",
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/tienda", "destination": "tienda.html" },
+    { "source": "/about", "destination": "about.html" },
+    { "source": "/proyectos", "destination": "proyectos.html" },
+    { "source": "/discord-pay", "destination": "discord-pay.html" },
+    { "source": "/equipo", "destination": "equipo.html" }
+  ]
+}
