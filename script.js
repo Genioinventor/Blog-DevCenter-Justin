@@ -3,7 +3,7 @@
 // ============================================
 const CONFIG = {
     nombre: "Justin",
-    edad: "12 años",
+   
     titulo: "Programador Web Apasionado",
     descripcionCorta: "Impulso el futuro digital a través de soluciones web de alto nivel, especializándome en arquitecturas escalables y experiencias de usuario de vanguardia.",
     descripcionCompleta: "Soy Justin, un desarrollador web de 12 años enfocado en la excelencia técnica y el diseño de vanguardia. A través de DevCenter, desarrollo soluciones digitales robustas y escalables que definen el estándar del desarrollo web moderno.",
