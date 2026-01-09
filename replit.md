@@ -6,12 +6,15 @@ DevCenter is a personal portfolio website for Justin, a 12-year-old web develope
 
 ## Recent Changes
 
-- **January 2026**:
-  - Implemented clean URL routing via `serve.json` (for Replit/local) and `vercel.json` (for Vercel).
-  - Renamed "Fundadores" to "Equipo" throughout the site.
-  - Redesigned the contact section with an interactive central logo and animated blue rays.
-  - Updated button text in "Páginas Web" from "Cotizar" to "Solicitar".
-  - Updated all navigation links and quick links to reflect routing and naming changes.
+- **December 2024**: 
+  - Added compact "Tienda" section on homepage linking to dedicated pages
+  - Created `discord-pay.html` page with 3 Discord server packages ($5, $10, $20 USD)
+  - Added option for custom server requests
+  - WhatsApp integration for purchasing
+  - Navigation updated on all pages to include the new Tienda link
+  - **Discord Shop Enhancement**: Added two creation modes:
+    - "Crear Personalizado": Users can select channel styles (e.g., #┃🌐┃Chat, #🌐┃Chat, #⟬🌐⟭・Chat) and category styles (e.g., ｢🌐｣ 𝗡𝗨𝗘𝗩𝗢). Also supports custom formats using (emoji) and (nombre) placeholders
+    - "Crear con Plantilla": Pre-made server templates with fixed pricing
 
 ## User Preferences
 
