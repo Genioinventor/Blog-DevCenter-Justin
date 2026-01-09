@@ -110,8 +110,60 @@ mobileLinks.forEach(link => {
     });
 });
 
+// Cargar equipo dinámicamente con animaciones
+async function loadTeam() {
+    const container = document.getElementById('teamContainer');
+    if (!container) return;
+
+    try {
+        const response = await fetch('equipo.json');
+        const team = await response.json();
+
+        container.innerHTML = team.map(member => `
+            <div class="team-card">
+                <div class="team-image-wrapper">
+                    <img src="${member.image}" alt="${member.name}" class="team-img">
+                    <div class="team-social-overlay">
+                        <a href="${member.github}" target="_blank" class="team-social-btn">GitHub</a>
+                    </div>
+                    <div class="team-name-overlay">${member.name}</div>
+                </div>
+                <div class="team-info">
+                    <h3 class="team-name">${member.name}</h3>
+                    <p class="team-role">${member.role}</p>
+                    <p class="team-bio">${member.bio}</p>
+                    <div class="team-badges">
+                        ${member.badges.map(badge => `<span class="badge">${badge}</span>`).join('')}
+                    </div>
+                </div>
+            </div>
+        `).join('');
+
+        // Configurar el Intersection Observer para las animaciones
+        const teamObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    // Añadir un pequeño retraso escalonado
+                    setTimeout(() => {
+                        entry.target.classList.add('reveal');
+                    }, index * 200);
+                    teamObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+
+        document.querySelectorAll('.team-card').forEach(card => {
+            teamObserver.observe(card);
+        });
+
+    } catch (error) {
+        console.error('Error cargando el equipo:', error);
+    }
+}
+
 // DOM Content Loaded
 document.addEventListener('DOMContentLoaded', () => {
+    loadTeam();
     initTypewriter();
 
     // Año dinámico

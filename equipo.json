@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Justin",
+    "role": "Desarrollador Multi-Plataforma",
+    "image": "DevCenter-Img/DevCenter.jpg",
+    "github": "https://github.com/Genioinventor",
+    "bio": "Experto en múltiples lenguajes de programación, creando soluciones innovadoras con DevCenter.",
+    "badges": ["Full Stack", "Multi-Dev"]
+  }
+]
