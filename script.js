@@ -15,6 +15,56 @@ const CONFIG = {
         github: "https://github.com/Genioinventor",
         discordServer: "https://discord.gg/y6svXGzerq",
         discordUser: "justininventor"
+    },
+
+    // Precios de la tienda (MXN) - Edita aquí los precios y planes
+    precios: {
+        moneda: "MXN",
+        servidoresDiscord: {
+            personalizado: "$80 MXN",
+            nota: "Los servidores con plantilla tienen precio fijo según el paquete. El servidor personalizado se cotiza según lo que necesites."
+        },
+        paginasWeb: [
+            {
+                nombre: "Básica",
+                precio: "$150 MXN",
+                descripcion: "Una página moderna tipo portafolio o landing page, perfecta para empezar.",
+                incluye: [
+                    "1 página (landing / portafolio)",
+                    "Diseño responsive (celular y PC)",
+                    "Modo claro / oscuro",
+                    "Publicación gratis (Netlify / GitHub Pages)",
+                    "Entrega en 3-5 días"
+                ]
+            },
+            {
+                nombre: "Profesional",
+                precio: "$350 MXN",
+                descripcion: "Sitio completo con varias secciones y formulario de contacto funcional.",
+                incluye: [
+                    "Hasta 5 páginas / secciones",
+                    "Diseño 100% personalizado",
+                    "Formulario de contacto",
+                    "SEO básico (título, descripción y favicon)",
+                    "Dominio propio (.com, .mx...) configurado",
+                    "Entrega en 1-2 semanas"
+                ],
+                destacado: true
+            },
+            {
+                nombre: "Premium",
+                precio: "$600 MXN+",
+                descripcion: "Proyecto grande o tienda en línea con panel y productos.",
+                incluye: [
+                    "Páginas ilimitadas",
+                    "Tienda en línea o blog con panel",
+                    "Base de datos y sistema de usuarios",
+                    "Integración con pagos (Stripe / Mercado Pago)",
+                    "Soporte por 1 mes",
+                    "Entrega según el proyecto"
+                ]
+            }
+        ]
     }
 };
 // ============================================
