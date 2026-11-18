@@ -3117,3 +3117,186 @@ main {
     display: block;
 }
 
+
+/* ============================================
+   TIENDA - Tarjetas de precios (pricing cards)
+   ============================================ */
+
+.shop-category-header {
+    text-align: center;
+    margin: 3rem 0 2rem;
+}
+
+.shop-category-title {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: hsl(var(--foreground));
+}
+
+.shop-category-desc {
+    margin-top: 0.5rem;
+    color: hsl(var(--muted-foreground));
+    font-size: 1rem;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    align-items: stretch;
+}
+
+.pricing-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: hsl(var(--card, var(--background)));
+    border: 1px solid hsl(var(--border));
+    border-radius: 1rem;
+    padding: 1.75rem 1.5rem;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-6px);
+    border-color: #a855f7;
+    box-shadow: 0 12px 32px rgba(168, 85, 247, 0.15);
+}
+
+.pricing-card.featured {
+    border-color: #a855f7;
+    box-shadow: 0 8px 28px rgba(168, 85, 247, 0.2);
+}
+
+.pricing-badge {
+    position: absolute;
+    top: -0.85rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #a855f7, #ec4899);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 0.35rem 1rem;
+    border-radius: 999px;
+    white-space: nowrap;
+}
+
+.pricing-header {
+    padding-bottom: 1.25rem;
+    margin-bottom: 1.25rem;
+    border-bottom: 1px solid hsl(var(--border));
+}
+
+.pricing-name {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: hsl(var(--foreground));
+    margin-bottom: 0.5rem;
+}
+
+.pricing-amount {
+    font-size: 2.25rem;
+    font-weight: 800;
+    line-height: 1;
+    background: linear-gradient(135deg, #a855f7, #ec4899);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.pricing-header.discord .pricing-amount {
+    background: linear-gradient(135deg, #5865F2, #7289da);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.pricing-amount span {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.pricing-desc {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    color: hsl(var(--muted-foreground));
+    line-height: 1.5;
+}
+
+.pricing-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    flex: 1;
+}
+
+.pricing-features li {
+    position: relative;
+    padding-left: 1.6rem;
+    font-size: 0.9rem;
+    color: hsl(var(--foreground));
+    line-height: 1.45;
+}
+
+.pricing-features li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.15rem;
+    width: 1rem;
+    height: 1rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2322c55e' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.pricing-btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.pricing-note {
+    margin-top: 2.5rem;
+    text-align: center;
+    font-size: 0.95rem;
+    color: hsl(var(--muted-foreground));
+    padding: 1rem 1.25rem;
+    border: 1px dashed hsl(var(--border));
+    border-radius: 0.75rem;
+}
+
+@media (max-width: 640px) {
+    .shop-category-title {
+        font-size: 1.4rem;
+    }
+
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.shop-compact-price {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #a855f7;
+    background: rgba(168, 85, 247, 0.12);
+    padding: 0.2rem 0.7rem;
+    border-radius: 999px;
+}
+
+.shop-compact-card.discord .shop-compact-price {
+    color: #5865F2;
+    background: rgba(88, 101, 242, 0.12);
+}
